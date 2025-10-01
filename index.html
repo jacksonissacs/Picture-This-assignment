@@ -15,7 +15,42 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+
+    
+    <picture class="responsive-img">
+      <!-- Square images (≥960px, shown at half viewport width) -->
+      <source 
+        media="(min-width: 960px)"
+        srcset="
+          images/museum-square-480.jpg 480w,
+          images/museum-square-960.jpg 960w,
+          images/museum-square-1440.jpg 1440w,
+          images/museum-square-1920.jpg 1920w,
+          images/museum-square-2400.jpg 2400w
+        "
+        sizes="50vw"
+      >
+
+      
+      <source 
+        media="(max-width: 959px)"
+        srcset="
+          images/museum-land-320.jpg 320w,
+          images/museum-land-640.jpg 640w,
+          images/museum-land-960.jpg 960w,
+          images/museum-land-1440.jpg 1440w,
+          images/museum-land-1920.jpg 1920w,
+          images/museum-land-2880.jpg 2880w
+        "
+        sizes="100vw"
+      >
+
+      
+      <img 
+        src="images/museum-land-960.jpg" 
+        alt="A museum building in both square and landscape formats"
+      >
+    </picture>
 
   </header>
 </body>
