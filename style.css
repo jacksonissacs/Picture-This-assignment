@@ -38,19 +38,26 @@ h4 {
 }
 
 
+@media (max-width: 959.98px) {
+  
+}
+
+
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  
   .responsive-img {
-    width: 50vw;     
-    aspect-ratio: 1/1;
+    width: 50vw;      
+    aspect-ratio: 1 / 1;
   }
 
   .responsive-img img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover; 
   }
 }
+

@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Picture This!</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -18,41 +18,47 @@
 
     
     <picture class="responsive-img">
-      
-      <source 
+     
+      <source
         media="(min-width: 960px)"
         srcset="
-          images/museum-square-480.jpg 480w,
-          images/museum-square-960.jpg 960w,
+          images/museum-square-480.jpg   480w,
+          images/museum-square-640.jpg   640w,
+          images/museum-square-800.jpg   800w,
+          images/museum-square-960.jpg   960w,
+          images/museum-square-1280.jpg 1280w,
           images/museum-square-1440.jpg 1440w,
+          images/museum-square-1600.jpg 1600w,
           images/museum-square-1920.jpg 1920w,
           images/museum-square-2400.jpg 2400w
         "
         sizes="50vw"
-      >
+      />
 
-      
-      <source 
-        media="(max-width: 959px)"
+     
+      <source
+        media="(max-width: 959.98px)"
         srcset="
-          images/museum-land-320.jpg 320w,
-          images/museum-land-640.jpg 640w,
-          images/museum-land-960.jpg 960w,
+          images/museum-land-320.jpg   320w,
+          images/museum-land-480.jpg   480w,
+          images/museum-land-720.jpg   720w,
+          images/museum-land-960.jpg   960w,
           images/museum-land-1440.jpg 1440w,
           images/museum-land-1920.jpg 1920w,
+          images/museum-land-2160.jpg 2160w,
           images/museum-land-2880.jpg 2880w
         "
         sizes="100vw"
-      >
+      />
 
       
-      <img 
-        src="images/museum-land-960.jpg" 
-        alt="A museum building in both square and landscape formats"
-      >
+      <img
+        src="images/museum-land-960.jpg"
+        alt="A museum building, shown in landscape on small screens and square on large screens."
+        loading="lazy"
+        decoding="async"
+      />
     </picture>
-
   </header>
 </body>
-
 </html>
